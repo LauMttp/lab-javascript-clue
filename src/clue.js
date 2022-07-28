@@ -180,10 +180,6 @@ function pickMystery() {
 // ITERATION 3
 
 function revealMystery(mystery) {
-  let suspectFirstName = mystery.suspect.firstName.toUpperCase();
-  let suspectLastName = mystery.suspect.lastName.toUpperCase();
-  let weaponName = mystery.weapon.name.toUpperCase();
-  let roomName = mystery.room.name.toUpperCase();
-  let solvedMysterySentence = `${suspectFirstName} ${suspectLastName} killed Mr. Boddy using the ${weaponName} in the ${roomName}`;
+  let solvedMysterySentence = `${mystery.suspect.firstName} ${mystery.suspect.lastName} killed Mr. Boddy using the ${mystery.weapon.name} in the ${mystery.room.name}!`;
   return solvedMysterySentence;
 }
